@@ -1,0 +1,260 @@
+/* Global Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General body styling */
+body {
+  font-family: Baskerville, serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header img {
+  height: 60px;
+  width: auto;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+/* Main Content Styling */
+.main {
+  padding-top: 150px; /* Prevents content from going under the fixed header */
+  max-width: 1000px; /* Increase width for wider content display */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.start {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+#submit {
+  margin-top: 10px;
+  background-color: #ffe367;
+  padding: 10px 20px;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Features Section */
+#features {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 0 auto;
+}
+
+section .grid {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 20px; /* Add space between icon and text */
+}
+
+section .icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.grid .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid .desc h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.grid .desc p {
+  font-size: 1rem;
+}
+
+/* How It Works Section */
+#how-it-works {
+  width: fit-content;
+  margin: 40px auto;
+}
+
+/* Pricing Section */
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#pricing {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item {
+  width: 200px;
+  background-color: #d8d8d8;
+  border: 2px solid #000000;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.item p {
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.item h2 {
+  background-color: #bfb49e;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.item .price {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  background-color: #6c6464;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgb(184, 184, 184);
+  padding: 10px 20px;
+}
+
+footer nav {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+footer p {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .start {
+    margin-top: 180px;
+  }
+
+  .grid, .items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item {
+    margin-bottom: 20px;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+  }
+
+  #nav-bar a {
+    padding: 10px 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  #pricing {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}

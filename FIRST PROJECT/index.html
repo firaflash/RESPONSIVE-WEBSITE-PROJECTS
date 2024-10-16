@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Channel Member Survey</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">ForCoder.io</h1>
+        <p id="description">HEY! Give me your thoughts on the coding revolution</p>
+    </div>
+    
+    <div class="formfield">
+        <form action="submit.php" method="post" id="survey-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name" id="name-label">
+                    Name: 
+                    <input placeholder="name" type="text" id="name" name="name" required>
+                </label>
+                <label for="email" id="email-label">
+                    Email: 
+                    <input type="email" placeholder="yourname@gmail.com" id="email" name="email" required>
+                </label>
+                <label for="age" id="number-label">
+                    Age:
+                    <input type="number" placeholder="min(15) max(120)" id="age" name="age" min="15" max="120" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <div class="field-section">
+                    <legend class="leg">Gender</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male" class="inline" checked> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" class="inline"> Female
+                    </label>
+                </div>
+                <div class="field-section">
+                    <legend class="leg">How did you get into this field?</legend>
+                    <label class="inline">
+                        <input type="checkbox" name="reason" value="passion" class="inline"> Passion for Technology
+                    </label>
+                    <label class="inline">
+                        <input type="checkbox" name="reason" value="problem-solving" class="inline"> Problem-Solving
+                    </label>
+                    <label class="inline">
+                        <input type="checkbox" name="reason" value="creative-outlet" class="inline"> Creative Outlet
+                    </label>
+                    <label class="inline">
+                        <input type="checkbox" name="reason" value="career-opportunities" class="inline"> Career Opportunities
+                    </label>
+                    <label class="inline">
+                        <input type="checkbox" name="reason" value="other" class="inline"> Other
+                    </label>
+                </div>
+                <div class="field-section">
+                    <label for="dropdown" id="referrer-label">Which field of SWE do you work on?</label>
+                    <select id="dropdown" name="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">Front-end Development</option>
+                        <option value="2">Back-end Development</option>
+                        <option value="3">Full-Stack Development</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                
+                
+                <legend id="last">Please provide a short explanation about the reason for your chosen field (optional)</legend>
+                <textarea placeholder="The reason I chose..." name="reason-explanation"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>

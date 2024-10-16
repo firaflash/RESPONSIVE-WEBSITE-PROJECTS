@@ -1,0 +1,96 @@
+body {
+    background-image: url(https://i.pinimg.com/564x/d6/1d/fe/d61dfea97ca56afd51cb74f795b6035e.jpg);
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+h1 {
+    font-family: Tahoma;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255,0.9);
+    text-align: center;
+}
+.header {
+    background-color: rgba(235, 234, 217, 0.641);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 75px;
+    border-radius: 10px;
+    border-color: aqua;
+}
+p {
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    text-align: center;
+}
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #ff8c00;
+    margin-bottom: 20px;
+}
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+label.inline {
+    display: inline-block;
+    margin-right: 1em; /* Adjust the spacing between labels */
+    vertical-align: middle;
+}
+fieldset label {
+    display: block;
+    margin-bottom: 10px; /* Adjust the spacing between label groups */
+}
+#referrer-label {
+    margin-top: 20px; /* Add space above the select dropdown */
+    display: block;
+}
+fieldset:last-of-type {
+    border-bottom: none;
+}
+legend {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.formfield {
+    background-color: rgba(0, 123, 255, 0.641);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    border-radius: 5px;
+    resize: vertical;
+}
+.field-section {
+    margin-top: -10px;
+    margin-bottom: 20px; /* Adjust this value for desired spacing */
+}
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Tahoma;
+}

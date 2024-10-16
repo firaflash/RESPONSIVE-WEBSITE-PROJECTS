@@ -1,0 +1,93 @@
+body{
+    background-color: rgba(240, 248, 255, 0.701);
+}
+
+
+#img-div {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+    
+}
+#img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 2%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 90%;
+    margin: 50px auto 10px auto;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 3%;
+}
+#title{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+}
+p{
+    font-size: 18px;
+    text-align: center;
+
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+figcaption{
+    text-align: center;
+    font-family :sans-serif;
+    font-style: italic;
+}
+
+.tribute{
+    margin: 5px auto;
+    padding: 10px ;
+    align-items: center;
+}
+
+section{
+    width: 700px;
+    max-width: 100%;  
+    margin: 0 auto; 
+}
+
+h2{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tribute-info{
+    margin: 50px auto;
+    margin-bottom: 3px;
+
+}
+
+
+
+ul > li > p {
+    display: block;
+    text-align: initial;
+}

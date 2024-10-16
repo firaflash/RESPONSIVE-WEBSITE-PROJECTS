@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>C++ Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>C++ Documentation</header>
+        <ul>
+          <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#What_You_Should_Already_Know" class="nav-link">What You Should Already Know</a></li>
+          <li><a href="#What_is_C++?" class="nav-link">What is C++?</a></li>
+          <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+          <li><a href="#Variables" class="nav-link">Variables</a></li>
+          <li><a href="#Variable_Scope" class="nav-link">Variable Scope</a></li>
+          <li><a href="#Constants" class="nav-link">Constants</a></li>
+          <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+          <li><a href="#Control_Structures" class="nav-link">Control Structures</a></li>
+          <li><a href="#Functions" class="nav-link">Functions</a></li>
+          <li><a href="#Object_Oriented_Programming" class="nav-link">Object Oriented Programming</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>  
+              <p>C++ is a powerful, general-purpose programming language widely used for system/software development, 
+                game programming, and high-performance applications. It extends the C programming language with object-oriented features,
+                  allowing for both low-level memory manipulation and high-level abstractions. C++ is a fundamental tool in many areas of software engineering, 
+                from embedded systems to large-scale enterprise applications.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="What_You_Should_Already_Know">                
+            <header>What You Should Already Know</header>
+            <article>
+                <ul>
+                    <li>A general understanding of programming concepts.</li>
+                    <li>Basic knowledge of computer science principles.</li>
+                    <li>Familiarity with another programming language is helpful but not necessary.</li>
+                </ul>
+            </article>
+        </section>    
+
+        <section class="main-section" id="What_is_C++?">
+            <header>What is C++?</header>
+            <article>
+                <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language. 
+                    It is widely used for system/software development, game development, and high-performance applications. 
+                    C++ supports both procedural and object-oriented programming, 
+                    giving developers a high level of control over system resources and memory.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <article>
+                <p>The "Hello, World!" program is a simple program that outputs "Hello, World!" to the console. 
+                    It is often used as the first program when learning a new programming language.</p>
+                    <pre>
+                        <code>#include &lt;iostream&gt;
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+                        </code>
+                    </pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <h2>Declaring Variables</h2>
+                <p>Variables in C++ are containers for storing data values. 
+                    A variable is declared with a data type and a name.</p>
+                    <pre>
+                        <code>int myNumber = 5; // Integer (whole number)
+double myFloat = 5.99; // Floating point number
+char myChar = 'D'; // Character
+                        </code>
+                    </pre>
+            </article>     
+        </section>   
+
+        <section class="main-section" id="Variable_Scope">
+            <header>Variable Scope</header>
+            <article>
+                <p>The scope of a variable determines where in your program that variable can be accessed. C++ has three main types of scope:</p>
+                <ul>
+                    <li>Local Scope: Variables declared inside a function or block.</li>
+                    <li>Global Scope: Variables declared outside of all functions.</li>
+                    <li>Static Scope: Variables that retain their value even after the function exits.</li>
+                </ul>
+            </article>  
+        </section>   
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <article>
+                <p>Constants are immutable values which are known at compile time and do not change during the execution of the program. 
+                    Use the `const` keyword to declare a constant.</p>
+                <pre>
+                    <code>const int MY_CONSTANT = 100;
+                    </code>
+                </pre>
+            </article>
+        </section>        
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <p>C++ has several built-in data types, including:</p>
+                <ul>
+                    <li><b>int:</b> Integer type.</li>
+                    <li><b>float:</b> Single precision floating point type.</li>
+                    <li><b>double:</b> Double precision floating point type.</li>
+                    <li><b>char:</b> Character type.</li>
+                    <li><b>bool:</b> Boolean type (true/false).</li>
+                </ul>
+                <header>User-Defined Data Types</header>
+                <ul>
+                    <li><b>Structures:</b> Group different data types together.</li>
+                    <li><b>Classes:</b> Define objects with attributes and methods.</li>
+                    <li><b>Enums:</b> Define a set of named integer constants.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Control_Structures">
+            <header>Control Structures</header>
+            <article>
+                <h2>if...else Statement</h2>
+                <p>The if statement is used to execute a block of code if a specified condition is true. 
+                    The else statement can be used to execute a block of code if the condition is false.</p>
+                <pre>
+                    <code>int x = 20;
+if (x > 10) {
+    std::cout << "x is greater than 10";
+} else {
+    std::cout << "x is less than or equal to 10";
+}
+                    </code>
+                </pre>
+                <h2>while Statement</h2>
+                <p>The while loop continuously executes a block of statements while a particular condition is true.</p>
+                <pre>
+                    <code>int i = 0;
+while (i < 5) {
+    std::cout << i << std::endl;
+    i++;
+}
+                    </code>
+                </pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <h2>Function Declaration</h2>
+                <p>A function is a block of code that only runs when it is called. 
+                    You can pass data, known as parameters, into a function. 
+                    Functions are used to perform specific tasks.</p>
+                <pre>
+                    <code>int add(int a, int b) {
+    return a + b;
+}
+                    </code>
+                </pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="Object_Oriented_Programming">
+            <header>Object Oriented Programming</header>
+            <article>
+                <h2>Introduction to OOP</h2>
+                <p>C++ supports OOP, which is a programming paradigm based on the concept of "objects". OOP allows you to model real-world entities and their interactions.</p>
+                <h2>Classes and Objects</h2>
+                <p>A class is a blueprint for creating objects. An object is an instance of a class.</p>
+                <pre>
+                    <code>class MyClass {
+public:
+    int myNumber;
+    void myFunction() {
+        std::cout << "Hello World";
+    }
+};
+
+int main() {
+    MyClass myObj; // Create an object of MyClass
+    myObj.myFunction(); // Call the method
+    return 0;
+}
+                    </code>
+                </pre>
+            </article>
+        </section>
+      </main>
+</body>
+</html>
