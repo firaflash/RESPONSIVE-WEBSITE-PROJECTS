@@ -105,34 +105,43 @@ form {
 section {
   margin: 0 auto;
 }
-
+/* General grid styling */
 section .grid {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  min-width: 80px;
+  gap: 20px;
   justify-content: center;
-  margin-bottom: 50px;
-  gap: 20px; /* Add space between icon and text */
 }
 
+/* Container styling for image and text in one line */
+.container {
+  display: flex;
+  align-items: center; /* Vertically align content */
+  gap: 20px; /* Add space between image and text */
+}
+
+/* Icon styling */
 section .icon img {
   width: 80px;
   height: 80px;
+  object-fit: cover; /* Ensure the image stays within the dimensions */
 }
 
+/* Description styling */
 .grid .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.grid .desc h2 {
+/* Headline styling */
+.grid .desc h1 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
+/* Paragraph text styling */
 .grid .desc p {
   font-size: 1rem;
 }
