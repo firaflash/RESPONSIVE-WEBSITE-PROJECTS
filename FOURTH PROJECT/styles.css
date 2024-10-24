@@ -169,8 +169,8 @@ section .icon img {
 
 .item {
   width: 200px;
-  background-color: #d8d8d8;
-  border: 2px solid #000000;
+  background-color: #c4c4c4;
+  border: 2px solid #f9f593;
   margin: 20px;
   border-radius: 5px;
 }
@@ -183,8 +183,8 @@ section .icon img {
 }
 
 .item h2 {
-  background-color: #bfb49e;
-  color: black;
+  background-color: rgb(46, 46, 46);
+  color: white;
   padding: 10px;
   width: 100%;
   text-transform: uppercase;
@@ -197,11 +197,11 @@ section .icon img {
   font-weight: bold;
   text-align: center;
   margin: 10px auto;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 button {
-  background-color: #6c6464;
+  background-color: #fff9b3;
   padding: 5px 10px;
   display: flex;
   align-items: center;
