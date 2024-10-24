@@ -34,6 +34,7 @@ header img {
   width: auto;
 }
 
+
 #nav-bar {
   display: flex;
   justify-content: flex-end;
@@ -96,8 +97,9 @@ form {
 #features {
   margin-top: 60px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  
 }
 
 section {
@@ -106,8 +108,9 @@ section {
 
 section .grid {
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 80px;
   justify-content: center;
   margin-bottom: 50px;
   gap: 20px; /* Add space between icon and text */
@@ -133,6 +136,7 @@ section .icon img {
 .grid .desc p {
   font-size: 1rem;
 }
+
 
 /* How It Works Section */
 #how-it-works {
@@ -225,8 +229,9 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 800px) {
+  
   .start {
-    margin-top: 180px;
+    margin-top: 210px;
   }
 
   .grid, .items {
@@ -244,7 +249,8 @@ footer p {
   }
 
   #nav-bar a {
-    padding: 10px 0;
+    padding: 10px 2px;
+    margin: 0;
   }
 
   iframe {
@@ -256,5 +262,9 @@ footer p {
     flex-direction: column;
     justify-content: center;
     margin-top: 60px;
+  }
+  header img{
+    width: 250px;
+    height: 110px;
   }
 }
